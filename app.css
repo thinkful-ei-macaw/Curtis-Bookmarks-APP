@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    background-color: skyblue;
+}
+/* Flex-Box Container */
+.container {
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 10px solid mistyrose;
+}
+/*Container for header*/
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2em;
+    border: 5px solid seagreen;
+}
+/* Container for buttons*/
+.app_btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+    .new_bookmark, .dropdown {
+    margin-left: 3em;
+    margin-right: 3em;
+    padding: 2em;
+    border: 5px solid  goldenrod;
+
+}
+/*Styles for New Bookmark button and Filter by rating Button*/
+.new_btn, .drop_btn {
+    background-color: #3498DB;
+    color: white;
+    padding: 2em;
+    font-size: 1em;
+    border: 2px solid royalblue;
+    cursor: pointer;
+  }
+
+  .expanded {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+
+  }
+
+  .site-and-description {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+  }
+  .input_fields {
+      display:flex;
+      fonst-size: 1.5em;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding: 3em;
+      border: 2px solid black;
+  }
+
+  .create_bm {
+      display: flex;
+      flex direction: row;
+      justify-content: flex-start;
+  }
+
+  .URL_descrip {
+      display:flex;
+      flex-direction: row;
+      justify-content: flex-start;
+  }
+  .store_items {
+      display: flex;
+      flex-direction: row;
+      border: 3px solid bisque;
+      margin-top:3em;
+      width: 50%;
+  }
+
+  .js-store-items {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 80%;
+      border: 2px solid brown;
+  }
+
+  ol {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+  }
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+  li {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      font-size: 1em;
+      border: 1px solid whitesmoke;
+      list-style: none;
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus, .new_btn:hover, .new_btn:focus {
+    background-color: #2980B9;
+  }
+  
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd}
+
+  .checked {
+    color: orange;
+  }
+  

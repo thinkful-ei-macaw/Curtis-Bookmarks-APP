@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Bookmarks App</title>
+</head>
+<body>
+    <main class="container">
+        <header class="title">
+            <h1>My Bookmarks</h1>
+        </header>
+        <section class="input_fields">
+            <div>
+                <h4>Create Bookmark</h4>
+            </div>
+            <form class="create_bm">
+                <label for="bm_name"></label><br>
+                <input type="text" id="bm_name" name="bm_name" placeholder= "Title" required>
+                <label for="url"></label>
+                <input type="text" id="site_URL" name="site_URL" placeholder="Site URL" required>
+              </form>
+              <form class= "URL_descrip">
+                  <textarea rows= "4" cols= "40" name= "description" placeholder= "description goes here"></textarea>
+              </form>
+              <form class= "rating_select">
+                <fieldset id="star_rating">
+                    <input type="radio" value="1">
+                    <label for="r1">1 star</label><br>
+                    <input type="radio" value="2">
+                    <label for="r1">2 stars</label><br>
+                    <input type="radio" value="3">
+                    <label for="r1">3 stars</label><br>
+                    <input type="radio" value="4">
+                    <label for="r1">4 stars</label><br>
+                    <input type="radio" value="5">
+                    <label for="r1">5 stars</label>
+                </fieldset>
+              </form>
+        </section>
+            <div class="store_items">
+                <ol class="js-store-items">
+                    <ul class="item_with_rating">
+                        <li><span class="bm_name">Bookmark Name</span></li>
+                        <li><span class="star_rating fa fa-star checked">rating</span></li>
+                    </ul>
+                    <ul class="item_with_rating">
+                        <li><span class="bm_name">Bookmark Name</span></li>
+                        <li><span class="star_rating fa fa-star checked">rating</span></li>
+                    </ul>
+                   
+                </ol>
+            </div>
+        </main>
+</body>
+
+</html>
