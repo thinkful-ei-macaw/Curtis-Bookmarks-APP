@@ -1,8 +1,8 @@
 * {
     box-sizing: border-box;
     background: rgba(150,189,228,1);
-    font-family: 'Lacquer' ;
-    font-size: .2 ;
+    font-family: 'Spartan',bold ;
+    font-size: 34px ;
 }
 
 h1 {
@@ -101,4 +101,3 @@ width: 20%;
 
 
 
-//here we go
