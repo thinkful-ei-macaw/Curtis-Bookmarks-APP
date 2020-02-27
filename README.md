@@ -8,7 +8,7 @@ GITHUB PAGES DEPLOYMENT PLEASE CLICK LINK ABOVE
 
 
 # Curtis-Bookmarks-APP
-Thinkful'd Bookmark APP assignment
+Thinkful's Bookmark APP assignment
 Objective: By the end of this checkpoint, you will have built a client-side Bookmarking application that utilizes a RESTful Web API on the backend.
 
 Project Overview
