@@ -46,13 +46,20 @@ h1 {
 ul {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     list-style: none;
    
 }
 li {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    border: 2px solid black;
+    padding: 1em;
+    margin-left: 2em;
+    margin-right: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
 
 }
 .bookmark-title {
@@ -90,3 +97,7 @@ width: 20%;
         position:relative;
         top:1px;
     }
+
+
+
+
