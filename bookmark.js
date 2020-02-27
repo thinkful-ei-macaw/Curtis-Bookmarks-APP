@@ -16,7 +16,7 @@ function serializeJson(form) {
 
 
 
-function generateInitialView(func) {
+function generateInitialView(f) {
   let html = `<h1>Your Bookmarks</h1>
   <section class="bkmrks-list">
       <form id ="buttons">
@@ -31,7 +31,7 @@ function generateInitialView(func) {
         <input type="button" name="filter-submit" value="filter" id= "filter-submit">
       </form>
         <ul class="bookmark-list">
-        ${func()}
+        ${f()}
         </ul>
         </section>`
 
@@ -51,7 +51,7 @@ function handleFilterChange() {
   });
 }
 
-function generateBookmarkString() {
+function  generateBookmarkString () {
   let items = store.bookmarks.filter(item => item.rating >= store.filter)
   items = items.map((item) => generateBookmark(item));
   return items.join('');
@@ -156,7 +156,8 @@ function handleAddingToggle() {
 // when user interacts with input fields during 'add new bookmark' this function takes care of creating the object for store and sending
 // the object data to my endpoint on the server
 function handleNewItemSubmit() {
-  $('main').on('submit', '#new-bookmark-form', event => {
+  $('main').on('submit','#new-bookmark-form', event => {
+    console.log("new item submit is listening");
     event.preventDefault();
     let data = serializeJson(event.target)
     console.log(data)
@@ -181,19 +182,20 @@ function handleNewItemSubmit() {
 const generateError = function (message) {
   return `
       <section class="error-content">
-        <button id="cancel-error">Cancel</button>
-        <p>${message}</p>
+        <button type="button" id="cancel-btn">Cancel</button>
+        <p>Please fill out required fields.</p>
       </section>
     `;
 };
 
 function renderError() {
-  console.log("There has been a malfunction!");
 
 //error var associated with store module export contains value for notifying user of problems with input
   if (store.error) {
+    console.log("There has been a malfunction!");
     const el = generateError(store.error);
     $('.error-container').html(el);
+    handleCancel();
   }
   
    else {
@@ -203,9 +205,14 @@ function renderError() {
 // I have yet to get this listener's function working properly
 function handleCancel () {
 console.log("handle cancel is listening shhhhhh....");
-  $('.error-container').on('click', '#cancel-error', (event) => {
+  $('#cancel-btn').on('click',(event) => {
+    console.log("you clicked CANCEL!");
     event.preventDefault();
-    generateInitialView();
+    store.adding = false;
+    store.error=null;
+    render();
+    
+   
   });
 };
 
