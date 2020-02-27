@@ -165,6 +165,7 @@ function handleNewItemSubmit() {
       .then((newItem) => {
         console.log(newItem);
         store.addItem(newItem);
+        store.error=null;
         store.adding = false;
         store.filter = 0;
         render();
