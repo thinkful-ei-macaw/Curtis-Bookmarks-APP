@@ -50,7 +50,11 @@ ul {
     list-style: none;
    
 }
+li {
+    display: flex;
+    flex-direction: column;
 
+}
 .bookmark-title {
     display: flex;
     flex-direction: column;
