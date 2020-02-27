@@ -1,9 +1,9 @@
 https://thinkful-ei-macaw.github.io/Curtis-Bookmarks-APP/
 
 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 GITHUB PAGES DEPLOYMENT PLEASE CLICK LINK ABOVE
-
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
