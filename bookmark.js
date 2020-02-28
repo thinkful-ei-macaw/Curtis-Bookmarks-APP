@@ -64,7 +64,7 @@ function generateBookmark (item) {
             ${item.title}  <div type="button" id="delete-button" item-id=${item.id}><i class="fas fa-trash"></i></div> 
         
         <div class="expanded-header">
-          <input type="button" value="visit site" id="visit-button" onclick="location.href = '${item.url}';"> 
+          <a target="blank" href = '${item.url}';">Visit Site</a> 
           <div class="expanded-stars" aria-label="${item.rating} star rating">${generateRating(item.rating)}</div>
         </div>
         <p>${item.desc}</p></li> `
@@ -166,8 +166,8 @@ function handleNewItemSubmit() {
         console.log(newItem);
         store.addItem(newItem);
         store.error=null;
-        store.adding = false;
         store.filter = 0;
+        store.adding = false;
         render();
       })
       .catch((error) => {
