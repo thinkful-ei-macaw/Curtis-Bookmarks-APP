@@ -14,7 +14,7 @@ function toggleExpand(bookmark) {
 }
 
 function addItem(item) {
-  bookmarks.push(item);
+  this.bookmarks.push(item);
 
 }
 
